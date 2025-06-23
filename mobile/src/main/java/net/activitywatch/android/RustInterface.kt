@@ -53,12 +53,12 @@ class RustInterface constructor(context: Context? = null) {
 
     fun startServerTask(context: Context) {
         if(!serverStarted) {
-            // check if port 5600 is already in use
+            // check if port 5601 is already in use
             try {
-                val socket = java.net.ServerSocket(5600)
+                val socket = java.net.ServerSocket(5601)
                 socket.close()
             } catch(e: java.net.BindException) {
-                Log.e(TAG, "Port 5600 is already in use, server probably already started")
+                Log.e(TAG, "Port 5601 is already in use, server probably already started")
                 return
             }
 

@@ -18,7 +18,7 @@ import net.activitywatch.android.watcher.UsageStatsWatcher
 
 private const val TAG = "MainActivity"
 
-const val baseURL = "http://127.0.0.1:5600"
+const val baseURL = "http://127.0.0.1:5601"
 
 
 class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelectedListener, WebUIFragment.OnFragmentInteractionListener {
