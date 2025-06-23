@@ -122,6 +122,7 @@ jobs:
     # Retry this, in case there are concurrent jobs, which may lead to the error:
     #   "Google Api Error: Invalid request - This Edit has been deleted."
     - name: Update versionCode
+      if: false
       uses: Wandalen/wretry.action@master
       with:
         command: bundle exec fastlane update_version
