@@ -6,7 +6,7 @@ android {
     ndkVersion "25.2.9519653"
 
     defaultConfig {
-        applicationId "net.activitywatch.android"
+        applicationId "net.activitywatch.android.clone"
         minSdkVersion 24
         targetSdkVersion 34
 

@@ -68,7 +68,7 @@ test-e2e:
 test-e2e-screenshot-only:
 	@# To only run screenshot test:
 	./gradlew connectedAndroidTest \
-		-Pandroid.testInstrumentationRunnerArguments.class=net.activitywatch.android.ScreenshotTest
+		-Pandroid.testInstrumentationRunnerArguments.class=net.activitywatch.android.clone.ScreenshotTest
 
 test-e2e-adb:
 	@# Requires that you have a device connected with the necessary APKs installed
@@ -79,8 +79,8 @@ test-e2e-adb:
 	@#
 	@# Run only screenshot test, for now
 	adb shell am instrument -w \
-		-e class net.activitywatch.android.ScreenshotTest
-		net.activitywatch.android.debug.test/androidx.test.runner.AndroidJUnitRunner
+		-e class net.activitywatch.android.clone.ScreenshotTest
+		net.activitywatch.android.clone.debug.test/androidx.test.runner.AndroidJUnitRunner
 
 install-apk-debug: $(APKDIR)/debug/mobile-debug.apk
 	adb install $(APKDIR)/debug/mobile-debug.apk

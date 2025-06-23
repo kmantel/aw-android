@@ -20,7 +20,7 @@ Install the APK from the Play Store or from the [GitHub releases](https://github
 ### For Oculus Quest
 
 > **Note** 
-> At some point a Quest system upgrade broke the ability to allow ActivityWatch access to usage stats. This can be fixed by manually assigning the needed permission using adb: `adb shell appops set net.activitywatch.android android:get_usage_stats allow`
+> At some point a Quest system upgrade broke the ability to allow ActivityWatch access to usage stats. This can be fixed by manually assigning the needed permission using adb: `adb shell appops set net.activitywatch.android.clone android:get_usage_stats allow`
 
 It's available [on SideQuest](https://sidequestvr.com/#/app/201). 
 
