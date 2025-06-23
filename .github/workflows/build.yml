@@ -109,6 +109,7 @@ jobs:
     # Needed for `fastlane update_version`
     - uses: adnsio/setup-age-action@v1.2.0
     - name: Load Fastlane secrets
+      if: false
       env:
         KEY_FASTLANE_API: ${{ secrets.KEY_FASTLANE_API }}
       run: |
@@ -494,7 +495,7 @@ jobs:
 
   release-fastlane:
     needs: [build-apk, test]
-    if: startsWith(github.ref, 'refs/tags/v')  # only on runs triggered from tag
+    if: false
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v3
